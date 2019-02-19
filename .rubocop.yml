@@ -1,0 +1,10 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - "Rakefile"
+    - "Gemfile"
+    - "bin/**/*"
+    - "spec/**/*"
+    - "exe/ydc"
+    - "*.gemspec"
+    - "vendor/bundle/**/*"

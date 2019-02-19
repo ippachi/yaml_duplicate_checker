@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/yaml_duplicate_checker'
+
+checker = YamlDuplicateChecker::Checker.new(ARGV[0])
+checker.dup_list.each do |dup_key, dup_locations|
+  puts "#{dup_key}:"
+  dup_locations.each do |location|
+    puts "  #{location}"
+  end
+  puts
+end
